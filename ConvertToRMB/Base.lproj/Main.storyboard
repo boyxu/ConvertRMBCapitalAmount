@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ZH-I7-2ch">
+                                <rect key="frame" x="16" y="142" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="JHo-Mb-0fp"/>
+                                    <constraint firstAttribute="height" constant="30" id="s3a-cN-8zk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JHo-Mb-0fp"/>
+                                        <exclude reference="s3a-cN-8zk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JHo-Mb-0fp"/>
+                                        <include reference="s3a-cN-8zk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="textFieldTextDidChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Lgi-ww-PCT"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6hf-Zc-oR5"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hmi-Ic-Vpd">
+                                <rect key="frame" x="16" y="206.5" width="568" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="iCL-YF-ZQu"/>
+                                    <constraint firstAttribute="width" constant="368" id="uQE-x8-Fuf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iCL-YF-ZQu"/>
+                                        <exclude reference="uQE-x8-Fuf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iCL-YF-ZQu"/>
+                                        <include reference="uQE-x8-Fuf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ZH-I7-2ch" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="B3m-DW-KSb"/>
+                            <constraint firstItem="hmi-Ic-Vpd" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="J6h-GU-Pe2"/>
+                            <constraint firstItem="hmi-Ic-Vpd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NiN-bF-6GE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6ZH-I7-2ch" secondAttribute="bottom" constant="428" id="X5B-Jd-FKL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hmi-Ic-Vpd" secondAttribute="bottom" constant="349" id="XWW-xa-eVP"/>
+                            <constraint firstItem="6ZH-I7-2ch" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="122" id="c6Q-z5-Ylz"/>
+                            <constraint firstItem="hmi-Ic-Vpd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="184" id="ePa-L2-6ET"/>
+                            <constraint firstItem="6ZH-I7-2ch" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hKN-4e-y9W"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B3m-DW-KSb"/>
+                                <exclude reference="c6Q-z5-Ylz"/>
+                                <exclude reference="hKN-4e-y9W"/>
+                                <exclude reference="J6h-GU-Pe2"/>
+                                <exclude reference="NiN-bF-6GE"/>
+                                <exclude reference="ePa-L2-6ET"/>
+                                <exclude reference="X5B-Jd-FKL"/>
+                                <exclude reference="XWW-xa-eVP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="B3m-DW-KSb"/>
+                                <include reference="c6Q-z5-Ylz"/>
+                                <include reference="hKN-4e-y9W"/>
+                                <include reference="J6h-GU-Pe2"/>
+                                <include reference="NiN-bF-6GE"/>
+                                <include reference="ePa-L2-6ET"/>
+                                <include reference="X5B-Jd-FKL"/>
+                                <include reference="XWW-xa-eVP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="hmi-Ic-Vpd" id="BCf-AH-zBV"/>
+                        <outlet property="textField" destination="6ZH-I7-2ch" id="zWU-oT-Uik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.5" y="302"/>
+        </scene>
+    </scenes>
+</document>
